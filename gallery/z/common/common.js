@@ -1,7 +1,7 @@
 
-var Z = require('./util')
+var BUI = require('./util')
 
-Z.mix(Z, {
+BUI.mix(BUI, {
   UA: require('./ua'),
   JSON: require('./json'),
   Date: require('./date'),
@@ -12,4 +12,4 @@ Z.mix(Z, {
   Component: require('./component')
 })
 
-module.exports = Z
+module.exports = BUI
