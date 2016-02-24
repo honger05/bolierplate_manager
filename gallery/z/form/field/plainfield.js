@@ -3,7 +3,7 @@
  * @ignore
  */
 
-  var Field = require('../basefield');
+  var Field = require('./basefield');
 
 
   var PlainFieldView = Field.View.extend({

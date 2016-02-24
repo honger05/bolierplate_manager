@@ -4,7 +4,7 @@
 * @author dxq613@gmail.com
 */
 
-  var Field = require('../basefield');
+  var Field = require('./basefield');
   /**
    * 表单隐藏域
    * @class BUI.Form.Field.ReadOnly

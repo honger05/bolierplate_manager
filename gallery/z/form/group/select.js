@@ -2,9 +2,10 @@
  * @fileOverview 选择框分组
  * @ignore
  */
+var BUI = require('../../common/common')
 
   var Group = require('./base'),
-    Data = require('../data/base'),
+    Data = require('../../data/base'),
     Bindable = BUI.Component.UIBase.Bindable;
 
   function getItems(nodes){

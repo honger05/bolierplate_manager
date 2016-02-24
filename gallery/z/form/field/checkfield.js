@@ -3,7 +3,7 @@
  * @ignore
  */
 
-  var Field = require('../basefield');
+  var Field = require('./basefield');
 
   /**
    * 可选中菜单域

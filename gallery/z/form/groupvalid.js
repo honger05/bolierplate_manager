@@ -2,7 +2,7 @@
  * @fileOverview 表单分组验证
  * @ignore
  */
-
+var BUI = require('../common/common')
 
   var CLS_ERROR = 'x-form-error',
     Valid = require('./valid');

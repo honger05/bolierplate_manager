@@ -4,7 +4,7 @@
  */
 
 
-  var CheckField = required('../checkfield');
+  var CheckField = require('./checkfield');
 
   /**
    * 表单单选域

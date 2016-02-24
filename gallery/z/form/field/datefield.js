@@ -6,7 +6,7 @@
 
 
   var BUI = require('../../common/common'),
-    Field = require('../basefield'),
+    Field = require('./basefield'),
     DateUtil = BUI.Date;/*,
     DatePicker = require('bui/calendar').DatePicker*/
 

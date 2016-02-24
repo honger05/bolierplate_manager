@@ -12,4 +12,4 @@ BUI.mix(Group,{
   Check : require('./group/check'),
   Select : require('./group/select')
 });
-return Group;
+module.exports = Group;

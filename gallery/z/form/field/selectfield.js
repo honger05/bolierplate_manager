@@ -5,7 +5,7 @@
 
 
   var BUI = require('../../common/common'),
-    Field = require('../basefield');
+    Field = require('./basefield');
 
   function resetOptions (select,options,self) {
     select.children().remove();

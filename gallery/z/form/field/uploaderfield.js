@@ -6,7 +6,7 @@
 
   var BUI = require('../../common/common'),
     JSON = BUI.JSON,
-    Field = require('../basefield'),
+    Field = require('./basefield'),
     Rules = require('../rules');
 
   /**

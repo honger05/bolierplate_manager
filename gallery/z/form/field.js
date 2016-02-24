@@ -2,7 +2,7 @@
 * @fileOverview 表单域的入口文件
 * @ignore
 */
-var BASE = './';
+var BASE = './field/';
 var BUI = require('../common/common'),
   Field = require(BASE + 'basefield');
 

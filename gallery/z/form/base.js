@@ -15,7 +15,7 @@ BUI.mix(Form,{
   Form : require(BASE + 'form'),
   Row : require(BASE + 'row'),
   Group : require(BASE + 'fieldgroup'),
-  HForm : require(BASE + 'horizontal'),
+  HForm : require(BASE + 'hform'),
   Rules : require(BASE + 'rules'),
   Field : require(BASE + 'field'),
   FieldGroup : require(BASE + 'fieldgroup')

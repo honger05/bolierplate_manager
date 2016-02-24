@@ -4,7 +4,7 @@
  */
 
   var BUI = require('../../common/common'),
-    ListField = require('../listfield');
+    ListField = require('./listfield');
 
   /**
    * @class BUI.Form.Field.CheckList

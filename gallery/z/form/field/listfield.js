@@ -5,7 +5,7 @@
 
   var BUI = require('../../common/common'),
     List = require('../../list/base'),
-    Field = require('../basefield');
+    Field = require('./basefield');
 
   function parseItems(items){
     var rst = items;

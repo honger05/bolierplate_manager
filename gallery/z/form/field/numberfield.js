@@ -10,7 +10,7 @@
    * @class BUI.Form.Field.Number
    * @extends BUI.Form.Field
    */
-  var Field = require('../basefield'),
+  var Field = require('./basefield'),
     numberField = Field.extend({
 
      /**

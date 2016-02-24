@@ -4,7 +4,7 @@
  * @ignore
  */
 
-  var Field = require('../basefield');
+  var Field = require('./basefield');
 
   /**
    * 表单文本域
