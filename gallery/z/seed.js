@@ -14,5 +14,7 @@ require('./grid/base')
 
 require('./menu/base')
 
+require('./form/base')
+
 
 module.exports = Z
