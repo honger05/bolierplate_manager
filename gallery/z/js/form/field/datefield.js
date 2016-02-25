@@ -7,6 +7,7 @@
 
   var BUI = require('../../common/common'),
     Field = require('./basefield'),
+    Calendar = require('../../calendar/base'),
     DateUtil = BUI.Date;/*,
     DatePicker = require('bui/calendar').DatePicker*/
 
@@ -33,14 +34,12 @@
     initDatePicker : function(datePicker){
       var _self = this;
 
-      BUI.use('bui/calendar',function(Calendar){
-        datePicker.trigger = _self.getInnerControl();
-        datePicker.autoRender = true;
-        datePicker = new Calendar.DatePicker(datePicker);
-        _self.set('datePicker',datePicker);
-        _self.set('isCreatePicker',true);
-        _self.get('children').push(datePicker);
-      });
+      datePicker.trigger = _self.getInnerControl();
+      datePicker.autoRender = true;
+      datePicker = new Calendar.DatePicker(datePicker);
+      _self.set('datePicker',datePicker);
+      _self.set('isCreatePicker',true);
+      _self.get('children').push(datePicker);
     },
     /**
      * 设置字段的值

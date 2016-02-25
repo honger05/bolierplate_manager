@@ -1,6 +1,6 @@
 
-require('./assets/less/dpl.less')
-require('./assets/less/bui.less')
+require('../assets/less/dpl.less')
+require('../assets/less/bui.less')
 
 var Z = require('./common/common')
 

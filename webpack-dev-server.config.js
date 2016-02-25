@@ -47,7 +47,7 @@ var devConfig = {
       'jquery': path.join(config.path.gallery, '/lib/jquery'),
       'handlebars': path.join(config.path.gallery, '/lib/handlebars'),
       'h': path.join(config.path.gallery, '/h/seed'),
-      'z': path.join(config.path.gallery, '/z/seed'),
+      'z': path.join(config.path.gallery, '/z/js/seed'),
       'common': path.join(config.path.gallery, '/common/common')
     }
   },
@@ -115,7 +115,7 @@ var devConfig = {
         loader: 'expose?H'
       },
       {
-        test: path.join(config.path.gallery, '/z/seed'),
+        test: path.join(config.path.gallery, '/z/js/seed'),
         loader: 'expose?Z'
       },
       {

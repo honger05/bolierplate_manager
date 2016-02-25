@@ -6,48 +6,61 @@
   <%= require('html!./inc-meta.html') %>
 </head>
 <body>
-  <form id="J_Form" class="form-horizontal">
-       <div class="row">
-         <div class="control-group span8">
-           <label class="control-label">供应商编码：</label>
-           <div class="controls">
-             <input name="id" type="text" data-rules="{required:true}" data-messages="{required:'供应商编码不能为空'}" class="input-normal control-text" data-tip="{text:'请输入供应商编码'}">
-           </div>
-         </div>
-         <div class="control-group span8">
-           <label class="control-label">供应商类型：</label>
-           <div class="controls">
-             <select name="type" class="input-normal">
-               <option value="saler">淘宝卖家</option>
-               <option value="large">大厂直供</option>
-             </select>
-           </div>
-         </div>
-       </div>
-       <div class="row">
-         <div class="control-group span15">
-           <label class="control-label">起始日期：</label>
-           <div class="controls bui-form-group" data-rules="{dateRange : true}">
-             <input name="start" data-tip="{text : '起始日期'}" data-rules="{required:true}" data-messages="{required:'起始日期不能为空'}" class="input-small calendar" type="text"><label>&nbsp;-&nbsp;</label>
-             <input name="end" data-rules="{required:true}" data-messages="{required:'结束日期不能为空'}" class="input-small calendar" type="text">
-           </div>
-         </div>
-       </div>
-       <div class="row">
-         <div class="control-group span15">
-           <label class="control-label">备注：</label>
-           <div class="controls control-row4">
-             <textarea data-tip="{text : '起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期起始日期'}" name="memo" class="input-large" type="text"></textarea>
-           </div>
-         </div>
-       </div>
-       <div class="row form-actions actions-bar">
-           <div class="span13 offset3 ">
-             <button type="submit" class="button button-primary">保存</button>
-             <button type="reset" class="button">重置</button>
-           </div>
-       </div>
-   </form>
+  <form id="J_Form">
+        <div class="row">
+          <div class="span10">
+            <p>
+              <label>必填项：</label><input name="a" data-rules="{required:true}" type="text">
+            </p>
+            <p>
+              <label>最大值：</label><input name="b" data-rules="{max:100}" type="text">
+            </p>
+
+            <p>
+              <label>最小值：</label><input name="c" data-rules="{min:10}" type="text">
+            </p>
+
+            <p>
+              <label>最小长度：</label><input name="d" data-rules="{minlength:5}" type="text">
+            </p>
+
+            <p>
+              <label>最大长度：</label><input name="e" data-rules="{maxlength:5}" type="text">
+            </p>
+
+            <p>
+              <label>第一次输入：</label><input id="f1" name="f1" type="text"><br/>
+              <label>第二次输入：</label><input name="f2" data-rules="{equalTo:'#f1'}" type="text">
+            </p>
+
+          </div>
+          <div class="span10">
+            <p>
+              <label>数字值：</label><input name="g" data-rules="{number:true}" type="text">
+            </p>
+
+            <p>
+              <label>日期值：</label><input class="calendar" name="h" data-rules="{date:true}" type="text">
+            </p>
+
+            <p>
+              <label>邮箱值：</label><input name="i" data-rules="{email:true}" type="text">
+            </p>
+
+            <p>
+              <label>正则表达式：</label><input name="j" data-messages="{regexp:'不是有效的数字'}" data-rules="{regexp:/^\d+$/}" type="text">
+            </p>
+
+            <p>
+              <label>最小日期：</label><input class="calendar" name="k" data-rules="{minDate:'2014-01-01'}" type="text">
+            </p>
+
+            <p>
+              <label>最大日期：</label><input class="calendar" name="l" data-rules="{maxDate:'2012-01-01'}" type="text">
+            </p>
+          </div>
+        </div>
+      </form>
 
   <%= require('html!./inc-footer.html') %>
 </body>
