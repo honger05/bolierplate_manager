@@ -3,6 +3,7 @@
 * @ignore
 */
 var BUI = require('../../common/common')
+var Editor = require('../../editor/base')
 
 var CLS_CELL_INNER = BUI.prefix + 'grid-cell-inner',
   CLS_CELL_ERROR = BUI.prefix + 'grid-cell-error';
@@ -143,12 +144,10 @@ BUI.augment(Editing,{
     var _self = this,
       grid = _self.get('grid');
     //延迟加载 editor模块
-    BUI.use('bui/editor',function(Editor){
-      _self.initEditors(Editor);
-      _self._initGridEvent(grid);
-      _self.set('isInitEditors',true);
-      _self.fire('editorready');
-    });
+    _self.initEditors(Editor);
+    _self._initGridEvent(grid);
+    _self.set('isInitEditors',true);
+    _self.fire('editorready');
   },
   /**
    * 初始化插件

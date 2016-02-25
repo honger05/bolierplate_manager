@@ -6,61 +6,67 @@
   <%= require('html!./inc-meta.html') %>
 </head>
 <body>
-  <form id="J_Form">
-        <div class="row">
-          <div class="span10">
-            <p>
-              <label>必填项：</label><input name="a" data-rules="{required:true}" type="text">
-            </p>
-            <p>
-              <label>最大值：</label><input name="b" data-rules="{max:100}" type="text">
-            </p>
+  <div class="row">
+        <div class="span16">
+          <div id="grid">
 
-            <p>
-              <label>最小值：</label><input name="c" data-rules="{min:10}" type="text">
-            </p>
-
-            <p>
-              <label>最小长度：</label><input name="d" data-rules="{minlength:5}" type="text">
-            </p>
-
-            <p>
-              <label>最大长度：</label><input name="e" data-rules="{maxlength:5}" type="text">
-            </p>
-
-            <p>
-              <label>第一次输入：</label><input id="f1" name="f1" type="text"><br/>
-              <label>第二次输入：</label><input name="f2" data-rules="{equalTo:'#f1'}" type="text">
-            </p>
-
-          </div>
-          <div class="span10">
-            <p>
-              <label>数字值：</label><input name="g" data-rules="{number:true}" type="text">
-            </p>
-
-            <p>
-              <label>日期值：</label><input class="calendar" name="h" data-rules="{date:true}" type="text">
-            </p>
-
-            <p>
-              <label>邮箱值：</label><input name="i" data-rules="{email:true}" type="text">
-            </p>
-
-            <p>
-              <label>正则表达式：</label><input name="j" data-messages="{regexp:'不是有效的数字'}" data-rules="{regexp:/^\d+$/}" type="text">
-            </p>
-
-            <p>
-              <label>最小日期：</label><input class="calendar" name="k" data-rules="{minDate:'2014-01-01'}" type="text">
-            </p>
-
-            <p>
-              <label>最大日期：</label><input class="calendar" name="l" data-rules="{maxDate:'2012-01-01'}" type="text">
-            </p>
           </div>
         </div>
-      </form>
+      </div>
+      <!-- 初始隐藏 dialog内容 -->
+      <div id="content" class="hide">
+        <form class="form-horizontal">
+          <div class="row">
+            <div class="control-group span8">
+              <label class="control-label"><s>*</s>文本：</label>
+              <div class="controls">
+                <input name="a" type="text" data-rules="{required:true}" class="input-normal control-text">
+              </div>
+            </div>
+            <div class="control-group span8">
+              <label class="control-label"><s>*</s>数字：</label>
+              <div class="controls">
+                <input name="b" type="text" data-rules="{required:true,number : true}" class="input-normal control-text">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="control-group span8 ">
+              <label class="control-label">日期：</label>
+              <div id="range" class="controls">
+                <input name="c" class="calendar" type="text">
+              </div>
+            </div>
+            <div class="control-group span8">
+              <label class="control-label">选择：</label>
+              <div class="controls">
+                <select name="d" class="input-normal">
+                  <option value="">请选择</option>
+                  <option value="1">选项一</option>
+                  <option value="2">选项二</option>
+                </select>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="control-group span12">
+              <label class="control-label">多选：</label>
+              <div class="controls bui-form-field-select" data-select="{multipleSelect:true,items : [{text:'选项一',value:'1'},{text:'选项二',value:'2'},{text:'选项三',value:'3'}]}">
+                <input type="hidden" name="e">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="control-group span15">
+              <label class="control-label">备注：</label>
+              <div class="controls control-row4">
+                <textarea name="f" class="input-large" type="text"></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
 
   <%= require('html!./inc-footer.html') %>
 </body>

@@ -12,8 +12,8 @@ BUI.mix(Grid,{
   Grid : require('./grid'),
   Column : require('./column'),
   Header : require('./header'),
-  Format : require('./format')
-  // Plugins : require('./plugins')
+  Format : require('./format'),
+  Plugins : require('./plugins/base')
 });
 
 module.exports = Grid;

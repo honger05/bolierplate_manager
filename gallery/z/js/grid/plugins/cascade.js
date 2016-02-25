@@ -4,7 +4,7 @@
 */
 
 
-var BUI = require('../common/common'),
+var BUI = require('../../common/common'),
   PREFIX = BUI.prefix,
   CLS_GRID_CASCADE = '',
   DATA_RECORD = 'data-record',

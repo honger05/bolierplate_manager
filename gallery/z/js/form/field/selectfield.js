@@ -5,6 +5,7 @@
 
 
   var BUI = require('../../common/common'),
+    Select = require('../../select/base'),
     Field = require('./basefield');
 
   function resetOptions (select,options,self) {
@@ -49,20 +50,19 @@
     _initSelect : function(select){
       var _self = this,
         items = _self.get('items');
-      BUI.use('bui/select',function(Select){
-        select.render = _self.getControlContainer();
-        select.valueField = _self.getInnerControl();
-        select.autoRender = true;
 
-        select = new Select.Select(select);
-        _self.set('select',select);
-        _self.set('isCreate',true);
-        _self.get('children').push(select);
-        select.on('change',function(ev){
-          var val = select.getSelectedValue();
-          _self.set('value',val);
-        });
-      })
+      select.render = _self.getControlContainer();
+      select.valueField = _self.getInnerControl();
+      select.autoRender = true;
+
+      select = new Select.Select(select);
+      _self.set('select',select);
+      _self.set('isCreate',true);
+      _self.get('children').push(select);
+      select.on('change',function(ev){
+        var val = select.getSelectedValue();
+        _self.set('value',val);
+      });
     },
     /**
      * 重新设置选项集合

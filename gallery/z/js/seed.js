@@ -16,5 +16,9 @@ require('./menu/base')
 
 require('./form/base')
 
+require('./tree/base')
+
+require('./tab/base')
+
 
 module.exports = Z
