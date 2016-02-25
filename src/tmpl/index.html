@@ -6,67 +6,9 @@
   <%= require('html!./inc-meta.html') %>
 </head>
 <body>
-  <div class="row">
-        <div class="span16">
-          <div id="grid">
-
-          </div>
-        </div>
-      </div>
-      <!-- 初始隐藏 dialog内容 -->
-      <div id="content" class="hide">
-        <form class="form-horizontal">
-          <div class="row">
-            <div class="control-group span8">
-              <label class="control-label"><s>*</s>文本：</label>
-              <div class="controls">
-                <input name="a" type="text" data-rules="{required:true}" class="input-normal control-text">
-              </div>
-            </div>
-            <div class="control-group span8">
-              <label class="control-label"><s>*</s>数字：</label>
-              <div class="controls">
-                <input name="b" type="text" data-rules="{required:true,number : true}" class="input-normal control-text">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="control-group span8 ">
-              <label class="control-label">日期：</label>
-              <div id="range" class="controls">
-                <input name="c" class="calendar" type="text">
-              </div>
-            </div>
-            <div class="control-group span8">
-              <label class="control-label">选择：</label>
-              <div class="controls">
-                <select name="d" class="input-normal">
-                  <option value="">请选择</option>
-                  <option value="1">选项一</option>
-                  <option value="2">选项二</option>
-                </select>
-              </div>
-            </div>
-
-          </div>
-          <div class="row">
-            <div class="control-group span12">
-              <label class="control-label">多选：</label>
-              <div class="controls bui-form-field-select" data-select="{multipleSelect:true,items : [{text:'选项一',value:'1'},{text:'选项二',value:'2'},{text:'选项三',value:'3'}]}">
-                <input type="hidden" name="e">
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="control-group span15">
-              <label class="control-label">备注：</label>
-              <div class="controls control-row4">
-                <textarea name="f" class="input-large" type="text"></textarea>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
+  <div id="s1">
+    <input type="hidden" id="hide" value="b" name="hide">
+  </div>
 
   <%= require('html!./inc-footer.html') %>
 </body>
