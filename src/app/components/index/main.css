@@ -1,3 +1,4 @@
+
 .clearfix {
   *zoom: 1;
 }
@@ -79,7 +80,7 @@ iframe {
   padding: none;
 }
 .header,.dl-main-nav{
-  background: url('./img/main-nav-bg.png') repeat-x 0 0 #204077;
+  background: url('./img/main-nav-bg2.gif') repeat-x 0 0 #204077;
 }
 .header {
   background-color: #1B3160;
@@ -139,7 +140,7 @@ iframe {
 }
 
 .nav-item-inner,.dl4-hide-list  .dl-hover{
-  background:url('./img/icon-806-614.png') no-repeat 0 0  transparent;
+  background:url('./img/icon-806-614.gif') no-repeat 0 0  transparent;
 }
 
 .nav-list .dl-hover{
@@ -236,7 +237,7 @@ iframe {
   border-radius: 2px 2px 0 0;
   border:1px solid #FFF;
   background-color:#E8E9EE;
-  color:#43478e;
+  color:#368482;
   font-weight:bold;
   height:30px;
 }

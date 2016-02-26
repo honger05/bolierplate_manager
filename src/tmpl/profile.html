@@ -5,8 +5,47 @@
   <title>首页</title>
   <%= require('html!./inc-meta.html') %>
 </head>
-<body>
-  aaa
+<body class="yy-page">
+  <div class="panel panel-default">
+    <div class="panel-header">
+      详细信息
+    </div>
+    <div class="panel-body">
+      <form id="J_Form" action="" class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label">城市：</label>
+          <div class="controls bui-form-group-select" data-type="city">
+            <select class="input-small" value="山东省"><option>省份</option></select>&nbsp;&nbsp;
+            <select class="input-small"><option>城市</option></select>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><s>*</s>店铺名称：</label>
+          <div class="controls">
+            <input name="sname" type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><s>*</s>地址：</label>
+          <div class="controls">
+            <input type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><s>*</s>电话：</label>
+          <div class="controls">
+            <input type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="form-actions span13 offset3">
+              <button type="submit" class="button button-primary">保存</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <%= require('html!./inc-footer.html') %>
 </body>

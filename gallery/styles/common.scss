@@ -2,3 +2,14 @@
 @import './variable.scss';
 @import './mixins.scss';
 @import './utilities.scss';
+
+.yy-page {
+  padding: 20px;
+}
+
+.bui-nav-tab-item .tab-item-inner {
+  margin: 0 32px 0 5px;
+  color: green;
+  text-align: center;
+  background-color: transparent;
+}
