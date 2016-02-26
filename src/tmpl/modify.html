@@ -5,8 +5,37 @@
   <title>首页</title>
   <%= require('html!./inc-meta.html') %>
 </head>
-<body>
-  bbb
+<body class="yy-page">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <form id="J_Form" action="" class="form-horizontal">
+        <div class="control-group">
+          <label class="control-label"><s>*</s>旧密码：</label>
+          <div class="controls">
+            <input name="sname" type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><s>*</s>新密码：</label>
+          <div class="controls">
+            <input name="sname" type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label"><s>*</s>确认新密码：</label>
+          <div class="controls">
+            <input name="sname" type="text" class="input-large" data-rules="{required : true}">
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="form-actions span13 offset3">
+              <button type="submit" class="button button-primary">保存</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
 
   <%= require('html!./inc-footer.html') %>
 </body>
