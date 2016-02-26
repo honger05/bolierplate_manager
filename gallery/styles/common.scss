@@ -4,12 +4,16 @@
 @import './utilities.scss';
 
 .yy-page {
-  padding: 20px;
+  padding: 10px 5px;
 }
 
 .bui-nav-tab-item .tab-item-inner {
   margin: 0 32px 0 5px;
-  color: green;
+  color: #3a787f;
   text-align: center;
   background-color: transparent;
+}
+
+.controls textarea {
+  width: 300px;
 }
