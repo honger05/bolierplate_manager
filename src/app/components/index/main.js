@@ -155,7 +155,7 @@
   //获取用户工作区域
   function getAutoHeight(){
     var height = Z.viewportHeight(),
-      subHeight = 70;
+      subHeight = 40;
     return height - subHeight;
   }
 

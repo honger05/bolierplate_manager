@@ -92,7 +92,7 @@ iframe {
   float: left;
   color: #c1d5ec;
   font-family: "Microsoft YaHei";
-  margin-left: 12px;
+  margin: 5px 17px;
   font-size: 18px;
   line-height: 28px;
 }
@@ -101,8 +101,9 @@ iframe {
 }
 .dl-log {
   color: #C1D5EC;
-  float: right;
-  padding: 5px 16px 0 0;
+  position: absolute;
+  right: 10px;
+  top: 8px;
 }
 .dl-log-user {
   font-style: bold;
