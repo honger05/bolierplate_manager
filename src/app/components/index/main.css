@@ -93,7 +93,7 @@ iframe {
   font-family: "Microsoft YaHei";
   margin-left: 12px;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 28px;
 }
 .dl-title a{
   color:#c1d5ec;
@@ -101,7 +101,7 @@ iframe {
 .dl-log {
   color: #C1D5EC;
   float: right;
-  padding: 10px 16px 0 0;
+  padding: 5px 16px 0 0;
 }
 .dl-log-user {
   font-style: bold;

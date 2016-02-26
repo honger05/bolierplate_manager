@@ -4,21 +4,23 @@ var MainPage = require('./main.js')
 var config = [
   {
     id:'profile',
+    homePage: 'profile',
     menu:[{
       text:'个人信息',
       items:[
-        {id:'main-menu',text:'个人信息',href:'a.html'},
-        {id:'second-menu',text:'修改密码',href:'a.html'}
+        {id:'profile',text:'个人信息',href:'profile.html', closeable: false},
+        {id:'modify',text:'修改密码',href:'modify.html'}
       ]
     }]
   },
   {
     id:'setting',
+    homePage: 'introduce1',
     menu: [
       {
         text:'机构用户',
         items:[
-          {id:'introduce1',text:'用户管理',href:'a.html'},
+          {id:'introduce1',text:'用户管理',href:'a.html', closeable: false},
           {id:'introduce2',text:'机构管理',href:'a.html'}
         ]
       },
